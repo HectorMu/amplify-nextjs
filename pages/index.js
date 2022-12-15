@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch(`/api/hello`);
+      const response = await fetch(`/api/test`);
       const data = await response.json();
       console.log(data);
     };
